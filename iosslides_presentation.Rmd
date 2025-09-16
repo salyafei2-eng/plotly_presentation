@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "ioslides_presentation"
 author: "Sara AlYafei"
@@ -31,3 +32,38 @@ plot_ly(x = ~x, y = ~y, type = 'scatter', mode = 'lines+markers',
 
 This presentation demonstrates how to create an interactive Plotly plot in R Markdown.  
 It is hosted as a web page and includes the creation date.
+=======
+---
+title: "ioslides_presentation"
+author: "Sara AlYafei"
+date: "2025-09-16"
+output: ioslides_presentation
+---
+**Introduction**
+
+This presentation shows an interactive Plotly plot created with R.  
+The goal is to demonstrate interactive data visualization.
+## Slide with Plotly
+```{r}
+library(plotly)
+library(dplyr)
+```
+
+# Sample data
+```{r}
+x <- seq(1, 10)
+y <- x^2
+```
+# Create Plotly interactive plot
+```{r}
+plot_ly(x = ~x, y = ~y, type = 'scatter', mode = 'lines+markers', 
+        name = 'y = x^2') %>%
+  layout(title = "Interactive Plotly Plot",
+         xaxis = list(title = "X-axis"),
+         yaxis = list(title = "Y-axis"))
+```
+**Conclusion**
+
+This presentation demonstrates how to create an interactive Plotly plot in R Markdown.  
+It is hosted as a web page and includes the creation date.
+>>>>>>> 62a853d48f66c399327721d994bfe3b081915db5
